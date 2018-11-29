@@ -75,7 +75,7 @@ def read_openpose_json(openpose_output_dir, idx, is_debug=False):
                     _tmp_data = data["people"][_data_idx]["pose_keypoints_2d"]
 
                     n = 0
-                    for o in range(0,len(_tmp_data),3):
+                    for o in range(0,len(_tmp_data)/2,3):
                         # logger.debug("o: {0}".format(o))
                         # logger.debug("len(_tmp_points): {0}".format(len(_tmp_points)))
                         # logger.debug("len(_tmp_points[o]): {0}".format(len(_tmp_points[n])))
